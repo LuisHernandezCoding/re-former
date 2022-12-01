@@ -42,4 +42,4 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Luis Hernandez**
 
-- GitHub: [@LuisHernandezCoding](
+- GitHub: [@LuisHernandezCoding]((https://github.com/LuisHernandezCoding)
