@@ -8,6 +8,21 @@ This is part of the Forms Project in The Odin Project’s Ruby on Rails Curricul
 - How to build an edit form that can display the pre-existing data that the form is meant to update.
 - How to update an instance of a model with the new edited information.
 
+## Topics of interest
+
+### Vanilla HTML form 'rubified'
+- Using Authenticity token
+- Using Post method
+- Accept-charset UTF-8
+
+### Form_tag
+- [Form_tag](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-form_tag)
+- [Form_tag options](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag)
+
+### Form_with
+- [Form_with](http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-form_with)
+- [Form_with options](http://api.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field)
+
 ## Built With
 
 - Ruby on Rails
