@@ -14,22 +14,6 @@
   <input type="submit" value="Create User">
 </form>
 
-
-<%= form_with model: @user do |form| %>
-  <%= form.label :username %>
-  <%= form.text_field :username %>
-
-  <%= form.label :email %>
-  <%= form.text_field :email %>
-
-  <%= form.label :password %>
-  <%= form.password_field :password %>
-
-  <%= form.submit %>
-<% end %>
-
--->
-
 <%= form_tag(users_path, method: "post") do %>
   <%= label_tag(:username, "Username") %>
   <%= text_field_tag(:username) %>
@@ -41,6 +25,22 @@
   <%= password_field_tag(:password) %>
 
   <%= submit_tag("Create User") %>
+<% end %>
+
+-->
+
+<%= form_with model: @user do |form| %>
+  <!-- Set Default value as "Henry" -->
+  <%= form.label :username, "Your Username" %>
+  <%= form.text_field :username, placeholder: "Username" %>
+
+  <%= form.label :email, "Your Email Goes here" %>
+  <%= form.text_field :email, placeholder: "foo@bar.com" %>
+
+  <%= form.label :password, "Your Password" %>
+  <%= form.password_field :password, placeholder: "Password" %>
+
+  <%= form.submit %>
 <% end %>
 
 <div class="flash">
