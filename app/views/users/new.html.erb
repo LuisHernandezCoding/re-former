@@ -2,7 +2,7 @@
 <form action="<%= users_path %>" method="post" accept-charset="UTF-8">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   
-  <label for="username">Name</label>
+  <label for="username">Username</label>
   <input type="text" name="user[username]" id="username">
 
   <label for="email">Email</label>
@@ -13,7 +13,7 @@
 
   <input type="submit" value="Create User">
 </form>
--->
+
 
 <%= form_with model: @user do |form| %>
   <%= form.label :username %>
@@ -26,6 +26,21 @@
   <%= form.password_field :password %>
 
   <%= form.submit %>
+<% end %>
+
+-->
+
+<%= form_tag(users_path, method: "post") do %>
+  <%= label_tag(:username, "Username") %>
+  <%= text_field_tag(:username) %>
+
+  <%= label_tag(:email, "Email") %>
+  <%= text_field_tag(:email) %>
+
+  <%= label_tag(:password, "Password") %>
+  <%= password_field_tag(:password) %>
+
+  <%= submit_tag("Create User") %>
 <% end %>
 
 <div class="flash">
