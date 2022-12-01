@@ -1,24 +1,45 @@
-# README
+# Ruby on Rails | Re-Former
+This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Find it at http://www.theodinproject.com
 
-Things you may want to cover:
+## Learning Outcomes
+- How to build a form in rails that can send parameters to a controller so that it can build an instance of a model with those parameters.
+- How to build an edit form that can display the pre-existing data that the form is meant to update.
+- How to update an instance of a model with the new edited information.
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby on Rails
+- Ruby
+- SQLite3
+- HTML
+- CSS
 
-* Configuration
+## Getting Started
 
-* Database creation
+To get a local copy up and running follow these simple example steps.
 
-* Database initialization
+### Prerequisites
 
-* How to run the test suite
+- Ruby
+- Rails
+- Bundler
 
-* Services (job queues, cache servers, search engines, etc.)
+### Setup
 
-* Deployment instructions
+- Clone the repository to your local machine
+- Run `bundle install` to install the required gems
+- Run `rails db:migrate` to create the database
+- Run `rails server` to start the server
+- Go to `localhost:3000` to see the web app
 
-* ...
+### Run tests
+
+- Run `rubocop` to run the test suite
+
+## Author
+
+👤 **Luis Hernandez**
+
+- GitHub: [@LuisHernandezCoding](
